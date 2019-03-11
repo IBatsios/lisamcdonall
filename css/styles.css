@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #3E2B1C;
+}
+
+.container {
+}
+
+.top {
+	display: grid;
+	grid-template-rows: 85vh;
+	grid-template-columns: 50% 50%;
+	overflow: hidden;
+}
+
+
+.bottom {
+	display: grid;
+	grid-template-rows: 15vh;
+	grid-template-columns: 25% 25% 25% 25%;
+	font-size: 3em;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 15vh;
+	font-family: 'Playfair Display', serif;
+	color: #000;
+	text-shadow: 1px 1px #3d2528;
+}	
+
+/*.content {
+	text-align: center;
+	max-width: 50%;
+}*/
+
+.content h1 {
+	font-family: 'Playfair Display', serif;
+	color: #F2F0C9;
+	font-size: 3em;
+	text-align: center;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+.content h3 {
+	font-family: 'Lato', sans-serif;
+	color: #F2F0C9;
+	font-size: 1.25em;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.content hr {
+	color: #F2F0C9;
+	size: 15px;
+}
+
+.content p {
+    font-family: 'Lato', sans-serif;
+    color: #F2F0C9;
+    padding: 0 20px;
+    font-size: 1.15em;
+}
+
+#main-content {
+	overflow-y: auto;
+	width: 100vw;
+}
+
+.social {
+	margin-left: 22%;
+}
+
+.social a {
+	color: #F2F0C9;
+}
+
+.social i {
+	padding: 50px 0 0 0;
+}
+
+.fa-yelp:hover {
+	color: #d32323;
+}
+
+.fa-linkedin-in:hover {
+	color: #0077b5;
+}
+
+.fa-facebook-square:hover {
+	color: #4267b2;
+}
+
+.fa-envelope:hover {
+	color: #FF5F61;
+}
+
+.fa-phone:hover {
+	color: #85AF4B;
+}
+
+.grow {
+	position: absolute;
+	margin: 400px 0 0 100px;
+	padding: 20px;
+	z-index: 20;
+	border-width: 5px;  
+    border-style: solid;
+    border-color: #F2F0C9;
+    color: #F2F0C9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.video-player {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#myVideo {
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: #fff;
+}
+
+#about {
+	background-color: #FF5F61;
+}
+
+#about:hover {
+	background-color: #3d2528;
+	cursor: pointer;
+}
+
+#services {
+	background-color: #85AF4B;
+}
+
+#services:hover {
+	background-color: #3d2528;
+	cursor: pointer;
+}
+
+#social {
+	background-color: #C68B53;
+}
+
+#social:hover {
+	background-color: #3d2528;
+	cursor: pointer;
+}
+
+#contact {
+	background-color: #F2F0C9;
+}
+
+#contact:hover {
+	background-color: #3d2528;
+	cursor: pointer;
+}

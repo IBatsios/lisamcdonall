@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lisa L. McDonall | CPA</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display|Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="top">
+			<div class="content">
+				<h1 onclick="mainFunction()">Lisa L. McDonall, CPA</h1>
+				<h3>CFO Solutions for Recreational and Medicinal Cannabis Production and Retail Ventures</h3>
+				<hr>
+				<p id="main-content">Here is some text</p>
+			</div><!-- End of content div -->
+			<div class="video-player">
+				<div class="grow">HELPING YOUR BUSINESS GROW</div>
+				<video autoplay muted loop id="myVideo">
+	  				<source src="assets/grow-short.mp4" type="video/mp4">
+	  				Your browser does not support HTML5 video.
+				</video>
+	    	</div> <!-- End of video div -->
+	    </div> <!-- End of top div -->
+	    <div class="bottom">
+			<a onclick="aboutFunction()"><div id="about">About</div></a>
+			<a onclick="serviceFunction()"><div id="services">Services</div></a>
+			<a onclick="mediaFunction()"><div id="social">Social</div></a>
+			<a onclick="contactFunction()"><div id="contact">Contact</div></a>
+		</div> <!-- End of bottom div -->
+	</div> <!-- End of container div -->
+
+	<script>
+	function aboutFunction() {
+  		document.getElementById("main-content").innerHTML = aboutContent;
+	}
+	var aboutContent = "<h4 style=\"margin: 0; padding: 0;\">Experience | Education/Accreditations</h4><br><ul style=\"margin: 0 0 0 20px; padding: 0;\"><li>Auditor for National “Big Eight” CPA Firm</li><ul><li>Retail and Wholesale Distribution</li><li>Manufacturing</li><li>Real Estate Acquisition and Management</li><li>Hotel and Apartment Management</li><li>Public Education</li><li>Non Profit Entities</li><li>Consolidated Accounting with multi-entity Structures</li></ul><li>Controller/CFO for Retail and Wholesale Automotive Dealers</li><li>Consultant for Automotive, Truck and Powersport Dealers</li><ul><li>Controller/CFO Training</li><li>Financial Statement Analysis and Reconciliation</li><li>Organizational and Operational Review</li><li>Buy/Sell Valuation</li></ul><li>Tax Preparation</li><li>Forensic Accounting</li><li>Business Valuation</li><li>Internal Revenue Service Audits</li></ul><ul style=\"list-style-type: square;\"><li>MBA – Finance | Wake Forest University</li><li>BS - Mathematical Sciences | UNC - Chapel Hill</li><li>BS – Accounting | UNC - Greensboro</li><li>NC Certified Public Accountant  License #19628</li></ul>";
+	function serviceFunction() {
+  		document.getElementById("main-content").innerHTML = serviceContent;
+	}
+
+	var serviceContent = "<h4 style=\"margin: 0; padding: 0;\">Consulting Services</h4><br><ul style=\"margin: 0 0 0 20px; padding: 0;\"><li>New Business Formation Assistance</li><li>State License Application Support</li><li>Corporate Structure Designation</li><li>Identify Technology Needs for Inventory Tracking,  Accounting Software & Payroll Processing</li><li>Accounting Application Support – General Ledger & Financial Statement Setup</li><li>Consolidated accounting with related party and inter company transactions</li><li>Cash Flow Management</li><li>Temporary Controller/CFO Services</li><li>Business Valuation</li><li>Forensic Accounting </li><li>Assistance with Financial Audits by State Regulators</li></ul><h4 style=\"margin: 0; padding: 20px 0 0 0;\">Tax Services</h4><br><ul style=\"margin: 0 0 0 20px; padding: 0;\"><li>Compliance with State and Local Sales, Use, and Excise Tax Returns Procedures</li><li>Compliance with Internal Revenue Code 263A Inventory Capitalization Rules </li><li>Maximize Tax Deductions under Internal Revenue Code Section 280 E</li><li>Assistance with Tax Audits by State Regulators</li><li>Federal and State Tax Return Filings</li>";
+	function mediaFunction() {
+  		document.getElementById("main-content").innerHTML = socialContent;
+	}
+
+	var socialContent = "<div class=\"social\"><a href=\"https://www.yelp.com/biz/lisa-mcdonall-cpa-winston-salem\" target=\"_blank\"><i class=\"fab fa-yelp fa-4x\"></i></a><br><a href=\"https://www.facebook.com/Lisa-L-McDonall-CPA-608773599563808/\" target=\"_blank\"><i class=\"fab fa-facebook-square fa-4x\"></i></a><br><a href=\"https://www.linkedin.com/in/lisa-mcdonall-1a93ab11/\" target=\"_blank\"><i class=\"fab fa-linkedin-in fa-4x\"></i></a></div>";
+
+	function contactFunction() {
+  		document.getElementById("main-content").innerHTML = contactContent;
+	}
+
+	var contactContent = "<div class=\"social\"><a href=\"mailto:cannabiscfosolutions@gmail.com?subject=Mail from CannabisCFOSolutions\"><i class=\"fas fa-envelope fa-5x\"></i><h4>&nbsp; Email Me</h4></a><br><a href=\"tel:336-926-3115\"><i class=\"fas fa-phone fa-5x\"></i><h4>&nbsp;&nbsp;&nbsp;Call Me</h4></a></div>";
+	
+	function mainFunction() {
+		document.getElementById("main-content").innerHTML = "Main Page";
+	}
+	</script>
+</body>
+</html>
